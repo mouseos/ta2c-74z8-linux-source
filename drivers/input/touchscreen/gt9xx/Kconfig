@@ -1,0 +1,57 @@
+config TOUCHSCREEN_GOODIX_GT9XX
+	tristate "Goodix I2C Touchscreen"
+	depends on I2C && INPUT
+	help
+	  Say Y here if you have Goodix GT9xx series I2C touch screen,
+	  such as gt911, connected to your system.
+
+	  If unsure, say N.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called gt9xx_ts.
+
+
+config TOUCHSCREEN_F1018
+	tristate "for F1018 touchscreen"
+	depends on I2C && INPUT
+	default n
+	help
+		Say Y here if you have a GT9271 touchscreen
+		If unsure, say N.
+
+config TOUCHSCREEN_ROTATION_90
+  tristate "for LCD ROTATION 90 touchscreen"
+  depends on I2C && INPUT
+  default n
+  help
+    Say Y here if you have a ROTATION touchscreen
+    If unsure, say N.
+
+config HAS_EARLYSUSPEND
+	tristate "for F1018 touchscreen"
+	depends on I2C && INPUT
+	default n
+
+config TOUCHSCREEN_F1006C
+	tristate "for F1006C touchscreen"
+	depends on I2C && INPUT
+	default n
+	help
+		Say Y here if you have a GT928 touchscreen
+		If unsure, say N.
+
+config TOUCHSCREEN_F8005
+	tristate "for F8005 touchscreen"
+	depends on I2C && INPUT
+	default n
+	help
+		Say Y here if you have a GT928 touchscreen
+		If unsure, say N.
+
+config TOUCHSCREEN_F8002
+	tristate "for F8002 touchscreen"
+	depends on I2C && INPUT
+	default n
+	help
+		Say Y here if you have a GT928 touchscreen
+		If unsure, say N.
